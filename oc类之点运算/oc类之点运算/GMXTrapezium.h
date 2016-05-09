@@ -21,6 +21,10 @@
 
 -(void)setUpside:(int)_upside2 andDownside:(int)_downside2 andHeight:(int)_height2;
 
+-(int)upside;
+-(int)downside;
+-(int)height;
+
 -(double)area;
 
 +(id)tixing;//在内部实例化一个实例
