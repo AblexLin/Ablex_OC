@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		7F7EA59A1CE01976003778F2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7EA5991CE01976003778F2 /* main.m */; };
 		7F7EA5A21CE01A73003778F2 /* GMXShape.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7EA5A11CE01A73003778F2 /* GMXShape.m */; settings = {ASSET_TAGS = (); }; };
+		7F7EA5A51CE0245F003778F2 /* GMXRectangle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7EA5A41CE0245F003778F2 /* GMXRectangle.m */; settings = {ASSET_TAGS = (); }; };
+		7F7EA5A81CE025BA003778F2 /* GMXCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7EA5A71CE025BA003778F2 /* GMXCircle.m */; settings = {ASSET_TAGS = (); }; };
+		7F7EA5AB1CE04FE8003778F2 /* GMXSquare.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F7EA5AA1CE04FE8003778F2 /* GMXSquare.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +31,12 @@
 		7F7EA5991CE01976003778F2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7F7EA5A01CE01A73003778F2 /* GMXShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMXShape.h; sourceTree = "<group>"; };
 		7F7EA5A11CE01A73003778F2 /* GMXShape.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMXShape.m; sourceTree = "<group>"; };
+		7F7EA5A31CE0245F003778F2 /* GMXRectangle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMXRectangle.h; sourceTree = "<group>"; };
+		7F7EA5A41CE0245F003778F2 /* GMXRectangle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMXRectangle.m; sourceTree = "<group>"; };
+		7F7EA5A61CE025BA003778F2 /* GMXCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMXCircle.h; sourceTree = "<group>"; };
+		7F7EA5A71CE025BA003778F2 /* GMXCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMXCircle.m; sourceTree = "<group>"; };
+		7F7EA5A91CE04FE8003778F2 /* GMXSquare.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMXSquare.h; sourceTree = "<group>"; };
+		7F7EA5AA1CE04FE8003778F2 /* GMXSquare.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMXSquare.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +72,12 @@
 				7F7EA5991CE01976003778F2 /* main.m */,
 				7F7EA5A01CE01A73003778F2 /* GMXShape.h */,
 				7F7EA5A11CE01A73003778F2 /* GMXShape.m */,
+				7F7EA5A31CE0245F003778F2 /* GMXRectangle.h */,
+				7F7EA5A41CE0245F003778F2 /* GMXRectangle.m */,
+				7F7EA5A61CE025BA003778F2 /* GMXCircle.h */,
+				7F7EA5A71CE025BA003778F2 /* GMXCircle.m */,
+				7F7EA5A91CE04FE8003778F2 /* GMXSquare.h */,
+				7F7EA5AA1CE04FE8003778F2 /* GMXSquare.m */,
 			);
 			path = "类的继承";
 			sourceTree = "<group>";
@@ -123,8 +138,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7EA5AB1CE04FE8003778F2 /* GMXSquare.m in Sources */,
+				7F7EA5A81CE025BA003778F2 /* GMXCircle.m in Sources */,
 				7F7EA5A21CE01A73003778F2 /* GMXShape.m in Sources */,
 				7F7EA59A1CE01976003778F2 /* main.m in Sources */,
+				7F7EA5A51CE0245F003778F2 /* GMXRectangle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
