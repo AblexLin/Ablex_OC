@@ -215,10 +215,14 @@ int main(int argc, const char * argv[]) {
         //NSMutableString本身就是继承nsstring的
         
         NSMutableString *str5=[NSMutableString stringWithCapacity:20];//定义一个字符串，空的现在
-        [str5 appendString:@"xuanye"];//修改字符串内容，静态的是生成一个新的str
+        //修改字符串内容，静态的是生成一个新的str
+        [str5 appendString:@"xuanye"];
         [str5 appendFormat:@"%d",123];
+
+        //替换和删除字符串
         NSRange range={3,2};
         [str5 replaceCharactersInRange:range withString:@"sdf"];//替换字符串
+        [str5 deleteCharactersInRange:range];//删除字符串
         NSLog(@"%@",str5);
     }
     return 0;
