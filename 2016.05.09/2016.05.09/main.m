@@ -190,6 +190,36 @@ int main(int argc, const char * argv[]) {
         NSString *str3=@"789";
         NSLog(@"%@%@%@",str1,[str2 stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]],str3);
         */
+        
+        //文件读写，错误原因如何查看
+        
+        //写文件
+        NSString *str1=@"轩爷";
+        [str1 writeToFile:@"xuan.txt" atomically:NO encoding:NSUTF8StringEncoding error:nil];
+        
+        //读文件
+        NSString *str2=[NSString stringWithContentsOfFile:@"xuan.txt" encoding:NSUTF8StringEncoding error:NULL];
+        NSLog(@"%@",str2);
+        
+        //出错信息如何查看
+        NSError *error;//定义一个error实例，然后在读取的时候取error的地址
+        NSString *str3=[NSString stringWithContentsOfFile:@"xuan2.txt" encoding:NSUTF8StringEncoding error:&error];
+        NSLog(@"%@,%@",error,str3);
+        
+        //字符串相连两种方法
+        NSString *str4=@"123";
+        str4=[NSString stringWithFormat:@"%@%@",str4,@"456"];
+        NSLog(@"%@,%@",str4,[str4 stringByAppendingString:@"nima"]);
+        
+        //2016.05.09一直到这，都是讲的静态的字符串str
+        //NSMutableString本身就是继承nsstring的
+        
+        NSMutableString *str5=[NSMutableString stringWithCapacity:20];//定义一个字符串，空的现在
+        [str5 appendString:@"xuanye"];//修改字符串内容，静态的是生成一个新的str
+        [str5 appendFormat:@"%d",123];
+        NSRange range={3,2};
+        [str5 replaceCharactersInRange:range withString:@"sdf"];//替换字符串
+        NSLog(@"%@",str5);
     }
     return 0;
 }
