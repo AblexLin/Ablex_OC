@@ -191,8 +191,8 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@%@%@",str1,[str2 stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]],str3);
         */
         
-        //文件读写，错误原因如何查看
-        
+        //文件读写，错误原因如何查看，字符串项链，动态字符串添加字符串，替换和删除字符串
+        /*
         //写文件
         NSString *str1=@"轩爷";
         [str1 writeToFile:@"xuan.txt" atomically:NO encoding:NSUTF8StringEncoding error:nil];
@@ -224,6 +224,7 @@ int main(int argc, const char * argv[]) {
         [str5 replaceCharactersInRange:range withString:@"sdf"];//替换字符串
         [str5 deleteCharactersInRange:range];//删除字符串
         NSLog(@"%@",str5);
+        */
     }
     return 0;
 }
