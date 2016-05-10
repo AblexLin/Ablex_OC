@@ -235,6 +235,7 @@
 				7F932F131CE1647000CEB481 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
