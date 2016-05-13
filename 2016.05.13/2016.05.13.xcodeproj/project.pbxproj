@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7F5DED3F1CE569BD006F75DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5DED3E1CE569BD006F75DF /* main.m */; };
+		7F5DED471CE56B6F006F75DF /* GMXMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5DED461CE56B6F006F75DF /* GMXMenu.m */; settings = {ASSET_TAGS = (); }; };
+		7F5DED4A1CE57031006F75DF /* GMXTelbook.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5DED491CE57031006F75DF /* GMXTelbook.m */; settings = {ASSET_TAGS = (); }; };
+		7F5DED4D1CE57786006F75DF /* GMXContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5DED4C1CE57786006F75DF /* GMXContact.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		7F5DED3B1CE569BD006F75DF /* 2016.05.13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = 2016.05.13; sourceTree = BUILT_PRODUCTS_DIR; };
 		7F5DED3E1CE569BD006F75DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F5DED451CE56B6F006F75DF /* GMXMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMXMenu.h; sourceTree = "<group>"; };
+		7F5DED461CE56B6F006F75DF /* GMXMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMXMenu.m; sourceTree = "<group>"; };
+		7F5DED481CE57031006F75DF /* GMXTelbook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMXTelbook.h; sourceTree = "<group>"; };
+		7F5DED491CE57031006F75DF /* GMXTelbook.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMXTelbook.m; sourceTree = "<group>"; };
+		7F5DED4B1CE57786006F75DF /* GMXContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GMXContact.h; sourceTree = "<group>"; };
+		7F5DED4C1CE57786006F75DF /* GMXContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GMXContact.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				7F5DED3E1CE569BD006F75DF /* main.m */,
+				7F5DED451CE56B6F006F75DF /* GMXMenu.h */,
+				7F5DED461CE56B6F006F75DF /* GMXMenu.m */,
+				7F5DED481CE57031006F75DF /* GMXTelbook.h */,
+				7F5DED491CE57031006F75DF /* GMXTelbook.m */,
+				7F5DED4B1CE57786006F75DF /* GMXContact.h */,
+				7F5DED4C1CE57786006F75DF /* GMXContact.m */,
 			);
 			path = 2016.05.13;
 			sourceTree = "<group>";
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F5DED4A1CE57031006F75DF /* GMXTelbook.m in Sources */,
 				7F5DED3F1CE569BD006F75DF /* main.m in Sources */,
+				7F5DED471CE56B6F006F75DF /* GMXMenu.m in Sources */,
+				7F5DED4D1CE57786006F75DF /* GMXContact.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
