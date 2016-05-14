@@ -20,7 +20,7 @@
     
     //创建一个自己定制的继承uiviewcontroller的类的对象的创建
     RootViewController *gmx_rootviewcontroller=[[RootViewController alloc]init];
-    
+
     //创建一个窗口对象，就是我们这个程序在手机上能看到的界面，界面大小和手机屏幕一样。
     
     self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
@@ -66,6 +66,10 @@
     UIButton *btn=[UIButton buttonWithType:UIButtonTypeContactAdd];//这个模式点时候显示的确定就读不到了
     btn.frame=CGRectMake(140, 30, 20, 20);
     btn.backgroundColor=[UIColor whiteColor];
+    
+    //设置按钮的图像，必须使用UIButtonTypeCustom这个定制点模式
+//    [btn setImage:[UIImage imageNamed:@"aaa.png"] forState:UIControlStateNormal];
+    
 //    [btn setTitle:@"确定" forState:UIControlStateNormal];
     
     //按钮的事件//添加一个目标

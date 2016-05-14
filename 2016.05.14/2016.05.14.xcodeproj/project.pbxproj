@@ -12,6 +12,7 @@
 		7F5A4C0C1CE6A2E600ACE607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A4C0B1CE6A2E600ACE607 /* Assets.xcassets */; };
 		7F5A4C0F1CE6A2E600ACE607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F5A4C0D1CE6A2E600ACE607 /* LaunchScreen.storyboard */; };
 		7F5A4C181CE6A39F00ACE607 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F5A4C171CE6A39F00ACE607 /* RootViewController.m */; settings = {ASSET_TAGS = (); }; };
+		7F6772571CE7336B00CB8910 /* aaa.png in Resources */ = {isa = PBXBuildFile; fileRef = 7F6772561CE7336B00CB8910 /* aaa.png */; settings = {ASSET_TAGS = (); }; };
 		7FB22C5E1CE6BD3E00F6D072 /* 640*1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB22C571CE6BD3E00F6D072 /* 640*1136.png */; settings = {ASSET_TAGS = (); }; };
 		7FB22C5F1CE6BD3E00F6D072 /* 640*960.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB22C581CE6BD3E00F6D072 /* 640*960.png */; settings = {ASSET_TAGS = (); }; };
 		7FB22C601CE6BD3E00F6D072 /* 320*480.png in Resources */ = {isa = PBXBuildFile; fileRef = 7FB22C591CE6BD3E00F6D072 /* 320*480.png */; settings = {ASSET_TAGS = (); }; };
@@ -32,6 +33,7 @@
 		7F5A4C101CE6A2E600ACE607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F5A4C161CE6A39F00ACE607 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		7F5A4C171CE6A39F00ACE607 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		7F6772561CE7336B00CB8910 /* aaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = aaa.png; sourceTree = "<group>"; };
 		7FB22C571CE6BD3E00F6D072 /* 640*1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "640*1136.png"; sourceTree = "<group>"; };
 		7FB22C581CE6BD3E00F6D072 /* 640*960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "640*960.png"; sourceTree = "<group>"; };
 		7FB22C591CE6BD3E00F6D072 /* 320*480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "320*480.png"; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 				7F5A4C031CE6A2E600ACE607 /* AppDelegate.m */,
 				7F5A4C161CE6A39F00ACE607 /* RootViewController.h */,
 				7F5A4C171CE6A39F00ACE607 /* RootViewController.m */,
+				7F6772561CE7336B00CB8910 /* aaa.png */,
 				7F5A4C0B1CE6A2E600ACE607 /* Assets.xcassets */,
 				7F5A4C0D1CE6A2E600ACE607 /* LaunchScreen.storyboard */,
 				7F5A4C101CE6A2E600ACE607 /* Info.plist */,
@@ -167,6 +170,7 @@
 				7FB22C5E1CE6BD3E00F6D072 /* 640*1136.png in Resources */,
 				7FB22C621CE6BD3E00F6D072 /* 2208*1242.png in Resources */,
 				7FB22C661CE6BDB900F6D072 /* 750*1334.png in Resources */,
+				7F6772571CE7336B00CB8910 /* aaa.png in Resources */,
 				7F5A4C0C1CE6A2E600ACE607 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
