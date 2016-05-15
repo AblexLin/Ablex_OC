@@ -12,6 +12,7 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+-(void)addCalButton:(CGRect)_size andCalTitle:(NSString *)_title;
 
 @end
 
