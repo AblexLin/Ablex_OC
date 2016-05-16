@@ -207,6 +207,15 @@
     
     //[self.window addSubview:textfield_user];
     //[self.window addSubview:slider];
+    
+    //UIAlertController的使用，比较复杂，了解下
+    UIAlertController *alert=[UIAlertController alertControllerWithTitle:@"这算什么" message:@"我错了" preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *cancel=[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:nil];
+    UIAlertAction *ok=[UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:nil];
+    [alert addAction:cancel];
+    [alert addAction:ok];
+    [root presentViewController:alert animated:YES completion:nil];
+
     return YES;
 }
 //实现按钮点击的行为
