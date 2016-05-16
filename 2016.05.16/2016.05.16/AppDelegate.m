@@ -98,6 +98,8 @@
     textfield_code.font=[UIFont systemFontOfSize:13];
     textfield_code.placeholder=@"请输入您的密码...";
     textfield_code.secureTextEntry=YES;                                                  //设定隐藏密码
+    textfield_code.borderStyle=UITextBorderStyleRoundedRect;                             //设定圆角边框
+    textfield_code.clearsOnBeginEditing=YES;                                             //一输入就清空
     
     //创建读取label和textfield数据的按钮
     button_showinfo=[[UIButton alloc]init];                                              //初始化个按钮
@@ -151,7 +153,11 @@
     UISwitch *switch1=[[UISwitch alloc]initWithFrame:CGRectMake(10, 30, 50, 50)];
     [switch1 addTarget:self action:@selector(switchTap:) forControlEvents:UIControlEventValueChanged];
     switch1.tag=15;
-
+    
+    switch1.onTintColor=[UIColor grayColor];        //打开时候按钮的颜色
+    switch1.tintColor=[UIColor yellowColor];        //关闭时候按钮的颜色
+    switch1.thumbTintColor=[UIColor orangeColor];   //开关圆点的按钮颜色
+    
     UISwitch *switch2=[[UISwitch alloc]initWithFrame:CGRectMake(80, 30, 50, 50)];
     [switch2 addTarget:self action:@selector(switchTap:) forControlEvents:UIControlEventValueChanged];
     switch2.tag=30;
@@ -175,6 +181,7 @@
     UISegmentedControl *seg=[[UISegmentedControl alloc]initWithItems:array];                    //初始化一个分段控件
     seg.frame=CGRectMake(10, 30, 200, 30);                                                      //设定控件大小
     seg.selectedSegmentIndex=0;                                                                 //默认选择第0个
+    seg.tintColor=[UIColor purpleColor];                                                        //分段的颜色
     [seg addTarget:self action:@selector(segTap:) forControlEvents:UIControlEventValueChanged]; //设置切换行为
     
     label_user=[[UILabel alloc]initWithFrame:CGRectMake(220, 30, 70, 30)];
@@ -190,9 +197,12 @@
     slider.minimumValue=0;                                                                              //设置最小值
     slider.maximumValue=10;                                                                             //设置最大值
     slider.value=5;                                                                                     //设置当前值
+    slider.minimumTrackTintColor=[UIColor redColor];                                                    //前半段进度条颜色
+    slider.maximumTrackTintColor=[UIColor greenColor];                                                  //后半段进度条颜色
+    slider.thumbTintColor=[UIColor blackColor];                                                         //滑块圆点的颜色
     [slider addTarget:self action:@selector(sliderTap:) forControlEvents:UIControlEventValueChanged];   //设置行为
-    textfield_user=[[UITextField alloc]initWithFrame:CGRectMake(220, 30, 50, 20)];
     
+    textfield_user=[[UITextField alloc]initWithFrame:CGRectMake(220, 30, 50, 20)];
     textfield_user.enabled=NO;                                                                          //文本框不能输入了
     
     //[self.window addSubview:textfield_user];
