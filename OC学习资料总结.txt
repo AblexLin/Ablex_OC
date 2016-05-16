@@ -1,0 +1,317 @@
+/******************************************/
+/* Ablex_Gu study for object-C 2016.05.09 */
+/******************************************/
+1.重写父类的init函数(不需要在interface里面声明)
+- (instancetype)init
+{
+    self = [super init];
+    if (self) {
+        <#statements#>
+    }
+    return self;
+}
+
+2.自定义初始化函数(需要在interface里面声明)
+-(id)initWithFirst_side:(int)_first_side andWithSecond_side:(int)_second_side andWithThird_side:(int)_thrid_side
+{
+    self=[super initWithFirst_side:_first_side andWithSecond_side:_second_side];
+    if (self) {
+        thrid_side =_thrid_side;
+    }
+    return self;
+}
+
+3.多态－－在子类中重写父类的行为，使用父类的对象调用此行为的时候，实际调用的是子类的行为，这就是多态。
+
+4.id数据类型
+id idtype=[[class alloc]init];
+isKindOfClass:(class)					//判断是不是这个类的成员或者其子类的成员
+isMemberOfClass:(class)					//判断是不是这个类的成员
+
+5.CGPoint(x,y),CGSize(width,height),CGRect(origin.x,origin.y,size.width,size.height),NSRange(range.location,range.length)
+
+6.字符串
+NSString stringWithFormat:				//字符串赋值或者叫初始化	
+NSString stringWithString:
+NSString stringWithUTF8String:
+str intValue						//字符串转换为数字
+str floatValue 
+str uppercaseString					//字符串大小写转换
+str lowercaseString 
+str.length						//字符串长度
+str length
+str lengthOfBytesUsingEncoding:NSUTF8StringEncoding 	//中文三个字符，不然2个
+
+NSRange range=[str rangeOfString:@"ab"];		//判断字符串中有没有哪个字符
+if (range.location==NSNotFound)
+{
+    NSLog(@"字符串中没有这个字符");
+}
+else
+{
+    NSLog(@"字符串中有这个字符");
+}
+
+str isEqualToString:@"abcdef"				//字符串比较
+str hasPrefix:@"b"					//字符串开头是不是有什么
+str hasSuffix:@“f”					//字符串结尾是不是有什么
+str substringFromIndex:					//字符串截取－从index到字符串尾巴
+str substringToIndex:					//字符串截取－从开始到index为止
+str substringWithRange:(NSRange)			//字符串截取－从range的location开始截取length长度
+str stringByAppendingString:				//字符串相连
+str stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet //字符串剔除空格
+
+str appendString:					//动态字符串相连
+str appendFormat:					//动态字符串相连
+str replaceCharactersInRange:NSRange withString:	//动态字符串替换字符串
+str deleteCharactersInRange:NSRange			//动态字符串删除字符串
+
+str writeToFile:filename atomically:NO encoding:NSUTF8StringEncoding error:nil 		//文件写入
+NSString stringWithContentsOfFile:filename encoding:NSUTF8StringEncoding error:NULL	//文件读取
+NSError *error						//定义一个error实例，然后在读取的时候取&error的地址
+
+/******************************************/
+/* Ablex_Gu study for object-C 2016.05.10 */
+/******************************************/
+1.静态数组(NSArray)
+array count						//数组长度
+array objectAtIndex:					//数组元素等同于array[i]
+
+2.动态数组(NSMutableArray)
+mutableArray addObject:					//数组增加元素
+mutableArray removeObject				//数组删除元素
+mutableArray removeAllObjects				//数组删除全部元素
+mutableArray removeLastObject				//数组删除最后一个元素
+mutableArray removeObjectAtIndex:			//数组删除指定位置元素
+mutableArray insertObject:				//数组指定位置插入元素		
+
+3.结合(NSSet)－－除了结合里不能出现相同的元素以外，其他基本都数组相同
+
+4.静态字典(NSDictionary)
+NSArray *values=[dictionary allValues];			//获取字典里的值
+NSArray *keys=[dictionary allKeys];			//获取字典里的键
+for (NSString *str in keys) {				//字典的遍历
+    NSLog(@"keys=%@,values=%@",str,[dictionary objectForKey:str]);
+}
+
+5.动态字典(NSMutableDictionary)
+dictionary setObject:@"轩爷" forKey:@"1"			//字典增加一对键值
+dictionary removeAllObjects				//删除字典全部元素
+dictionary removeObjectForKey				//删除指定key的值
+dictionary valueForKey:str				//根据key显示值
+
+6.NSValue把数据型的数据转换为对象,把点，矩形，范围，大小转换为对象，在保存在数组中
+CGPoint point1={1,1};
+NSValue *value=[NSValue valueWithPoint:point1];		//alloc的形式没有这个行为
+NSValue *value=[NSValue valueWithPoint:point2];		//结构都可以放进来
+NSValue *value=[NSValue valueWithPoint:point3];		//point，size，rect，rang等
+NSArray *array=[NSArray arrayWithObjects:value,value,value, nil];
+for (NSValue *v in array) {
+    NSLog(@"%g,%g",[v pointValue].x,[v pointValue].y);	//和之前的intvalue是一样的
+}
+
+7.NSNumber把数值转换为对象和NSValue用法相同
+
+8.NSData，针对二进制文件的写入结合(NSSet)不能写入，需要把集合内容转到数组，再写入
+data dataWithContentsOfFile				//读取二进制
+data writeToFile:@"a.jpg" atomically:YES		//写入二进制
+
+/******************************************/
+/* Ablex_Gu study for object-C 2016.05.11 */
+/******************************************/
+1.arc(objective-c Automatic Reference Counting)内存管理—-使用alloc的时候，引用计数＋1 release的时候－1
+
+2.@property和@synthesize
+@property(strong,nonatomic)NSString *name;		//@interface声明的地方使用
+@synthesize name;					//@implementation实现的地方使用
+//使用后再main里可以直接使用.name或者setName这两个行为了
+//在类内部的话，可以直接使用self.name在任何地方使用这个数据，如果@synthesize name没有实现的话，就只能使用_name来调用了，实现了的话也可以直接使用name来调用
+
+3.给已有(没有源代码)类添加行为－类别(category)
+//类别只能添加行为，不能添加数据
+//如果添加的行为和内部本身的行为相同的时候，就会覆盖掉原先的内容
+@interface NSString (log)				//给类增加一个叫(log)的行为
+-(void)log;
+@end
+
+
+4.协议(protocol)
+@interface GMXCopying : NSObject<NSCopying>		//继承能够被拷贝的协议
+@property (strong,nonatomic)NSString *name;
+@property (assign,nonatomic)int age;
+@end
+
+@implementation GMXCopying
+-(id)copyWithZone:(NSZone *)zone			//继承了nscopy协议，需要重新实现
+{
+    GMXCopying *s=[[[self class]alloc]init];
+    s.name=_name;//实现复制的功能
+    s.age=_age;
+    return s;
+}
+@end
+
+@protocol action <NSObject>
+//协议，只有声明部分，没有.m文件，继承至<NSObject>
+//协议本身也是一个特殊的类，只是只有声明，没有实现
+@required 						//下面列出的是必须要实现的协议
+-(void)say;
+
+@optional 						//下面列出的是选择要实现的协议
+-(void)song;
+@end
+
+5.描述(description)
+@implementation GMXCopying				//自己定义的类想要通过对象名输出对象的数据，就需要重写这个行为
+-(NSString *)description
+{
+    return [NSString stringWithFormat:@"desname=%@,desage=%d",self.name,self.age];
+}
+@end
+
+6.文件操作(NSKeyedArchiver)				
+@interface GMXWenjian : NSObject<NSCoding>		//想归档自己的类，必须继承这个协议
+@property (strong,nonatomic)NSString *name;
+@property (assign,nonatomic)int age;
+@end
+
+@implementation GMXWenjian
+-(void)encodeWithCoder:(NSCoder *)aCoder            	//编码
+{
+    [aCoder encodeObject:self.name forKey:@"NAME"];
+    [aCoder encodeInt:self.age forKey:@"AGE"];
+}
+-(id)initWithCoder:(NSCoder *)aDecoder              	//解码
+{
+    self =[super init];
+    self.name=[aDecoder decodeObjectForKey:@"NAME"];
+    self.age=[aDecoder decodeIntForKey:@"AGE"];
+    return self;
+}
+@end
+//必须实现了上面的编码解码，这个才可以写入
+NSKeyedArchiver archiveRootObject:array toFile:filename	//自己类的数据写入(把数组写入)
+NSKeyedUnarchiver unarchiveObjectWithFile:filename	//自己类的数据读取(读取到数组)
+
+7.文件管理类(NSFileManager)
+NSFileManager defaultManager				//初始化一个NSFileManager对象，生成的是单例
+fm fileExistsAtPath:filename				//是不在路经下有这么一个文件
+fm copyItemAtPath:filename toPath:filename error:&err	//拷贝一个文件到另一个文件并记录错误信息
+fm removeItemAtPath:filename error:&err			//删除一个文件并记录错误信息
+fm attributesOfItemAtPath:filename error:nil		//查看指定文件名的文件属性
+
+/******************************************/
+/* Ablex_Gu study for object-C 2016.05.12 */
+/******************************************/
+1.谓词(NSPredicate)
+//设计一个条件～～
+int a=arc4random()%26+65;				//生成一个随机数
+NSPredicate predicateWithFormat:@"self='aaa'"		//固定格式，不可修改
+NSPredicate predicateWithFormat:@"self like '*A*'"	//灵活的格式
+NSPredicate predicateWithFormat:@"self like 'aa?'"	//?占一个字符
+NSPredicate predicateWithFormat:@"std_name like 'a??'"  //这里的std_name必须是变量名称
+predicate evaluateWithObject:str			//表示符合条件返回1，否则返回0
+
+2.单例(sington)
+//其实就是生成多个对象的时候，这个对象申请到的总是同一个地址，也就是同一个东西
+@interface GMXUiapplication : NSObject
++(GMXUiapplication *)shareApplication;			//share default standard单例类的行为一般都用这个开头
+@end
+
+static GMXUiapplication *application=nil;		//单线程静态对象
+@implementation GMXUiapplication
++(GMXUiapplication *)shareApplication
+{
+    @synchronized(self) {				//多线程的时候，如果上一个线程没有做完，会在这等待
+        						//单线程时候ok，多线程的时候需要同步下
+        if (application==nil) {
+            application=[[[self class]alloc]init];
+            return application;
+        }
+    }
+    return application;					//上面这么写以后，多线程的时候，同一时候只能是一个线程去运行它
+}
+@end
+
+3.代理(delegate)
+@property (strong,nonatomic)GMXSec *dele;		//在第一个类里面定义第二个个类的对象作为数据
+//调用方法—-使用[第一个类.第二个类的对象 第二个类的对象的行为]来实现代理
+//定义方法—-在main里面各自初始化一个类的对象对象，使用－－第一个类的对象.第二个类的对象(在第一个类里面定义的名字)=main里第二个类的对象
+//定义方法—-在第一个类里面初始化第二个类的对象，那么久能直接在第一个类里面调用第二个类的对象的行为了
+
+//经典案例
+GMXDelegate *liuboss=[[GMXDelegate alloc]init];
+liuboss.name=@"刘老板";
+[liuboss talk];
+GMXSec *sec=[[GMXSec alloc]init];
+sec.name=@"张秘书";
+liuboss.dele=sec;
+[liuboss.dele phone];//刘老板的代理去打电话了～～
+
+/******************************************/
+/* Ablex_Gu study for object-C 2016.05.13 */
+/******************************************/
+1.通讯录联系人程序
+
+/******************************************/
+/* Ablex_Gu study for object-C 2016.05.14 */
+/******************************************/
+1.xcode7.如何创建一个纯文本的工程
+//新建一个Single View Application
+//删除Deployment info->Main Interface里面的main(ipad的时候先上面到devices切换到iphone再切换回ipad)
+//在AppDelegate.m中导入ViewController.h并在第一个行为init里输入ViewController的初始化，详细代码如下
+
+ViewController *root=[[ViewController alloc]init];	//初始化
+self.window=[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];//根据屏幕设定窗口大小
+self.window.rootViewController=root;			//把窗口的rootViewController设定为我们新建的对象
+self.window.backgroundColor=[UIColor blackColor];	//设置窗口背景颜色
+[self.window makeKeyAndVisible];			//这个必须放在上面，先让窗口可视化，然后添加的按钮，才能够点击
+
+//frame指的是本控件相对于父控件的位置(相对的)
+//bounds指的是本身，也就是控件本身的位置和大小，所以bounds的起点一直是0，0，长宽就是自己的大小(绝对的，其实就是)
+//手机状态栏的高度永远是20
+
+//如果仿真器背景颜色为黑色，那么状态栏就不显示时间了，被覆盖了怎么办？如下:
+//eployment info->Status Bar Style设定为light  
+//选择info.plist在空白右击并选择Add Row 选择里面的最后一个View controller-based status bar appearance 默认数据为NO
+
+2.标签(UILabel)
+UILabel *label=[[UILabel alloc]initWithFrame:CGRectMake(0, 30, 140, 20)];	//创建一个标签label并设置frme
+										//设置属性的两种做法，都可以。
+[label setText:@"添加一个联系人:"];						//设置标签的显示内容
+[label setBackgroundColor:[UIColor whiteColor]];				//设置标签的背景颜色
+[label setTextColor:[UIColor redColor]];					//设置标签的文本颜色
+
+label.text=@"添加一个联系人:";							//同上
+label.backgroundColor=[UIColor whiteColor];					//同上
+label.textColor=[UIColor redColor];						//同上
+label.textAlignment=NSTextAlignmentRight;					//设置标签的对齐方式
+label.font=[UIFont systemFontOfSize:80];					//设置标签的文字大小
+[self.window addSubview:label];							//把标签添加到窗口上
+
+3.按钮(UIButton)
+UIButton *btn=[UIButton buttonWithType:UIButtonTypeContactAdd];			//创建一个按钮button，这个模式点时候显示的确定就读不到了
+btn.frame=CGRectMake(140, 30, 20, 20);						//设置按钮大小，上面的label也可以这么设置大小
+btn.backgroundColor=[UIColor whiteColor];					//设置按钮背景颜色
+[btn setImage:[UIImage imageNamed:@"aaa.png"] forState:UIControlStateNormal];	//设置按钮背景图片-必须使用UIButtonTypeCustom这个定制点模式
+[btn setTitle:@"确定" forState:UIControlStateNormal];				//设置按钮上文本内容
+buttons.titleLabel.font=[UIFont systemFontOfSize:20];				//设置按钮上文本大小
+[self.window addSubview:buttons];						//把按钮添加到窗口上
+
+//按钮响应事件
+[btn addTarget:self action:@selector(buttonTap:) forControlEvents:UIControlEventTouchDown];	//按下的时候响应
+[btn addTarget:self action:@selector(buttonOut:) forControlEvents:UIControlEventTouchUpInside];	//抬起的时候响应
+-(void) buttonTap:(UIButton *)sender
+{
+    NSLog(@“响应后执行这个”);
+}
+
+4.app启动画面和图标
+//在assets.xcassets文件下选择appicon根据提示添加相应的图片，图片格式为png格式
+//图片大小-40pt表示40*40像素点图片。2x，3x这样的就是对应的几倍
+//启动画面默认没有，在appicon下面空白右击可以新增一个，然后喝icon类似的操作
+
+/******************************************/
+/* Ablex_Gu study for object-C 2016.05.15 */
+/******************************************/
+1.实现计算器的功能
