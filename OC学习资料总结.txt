@@ -315,3 +315,53 @@ buttons.titleLabel.font=[UIFont systemFontOfSize:20];				//设置按钮上文本
 /* Ablex_Gu study for object-C 2016.05.15 */
 /******************************************/
 1.实现计算器的功能
+
+/******************************************/
+/* Ablex_Gu study for object-C 2016.05.16 */
+/******************************************/
+1.单行文本输入框(UITextField)
+self.textfield=[[UITextField alloc]initWithFrame:CGRectMake(10, 40, 200, 50)];      //初始化个对象
+self.textfield.backgroundColor=[UIColor lightGrayColor];                            //设定背景颜色
+self.textfield.textColor=[UIColor blueColor];                                       //设定文本颜色
+self.textfield.textAlignment=NSTextAlignmentCenter;                                 //设定居中对齐
+self.textfield.keyboardAppearance=UIKeyboardAppearanceDefault;                      //设定显示模式
+self.textfield.keyboardType=UIKeyboardTypeNumberPad;                                //设定数字键盘
+self.textfield.returnKeyType=UIReturnKeyGo;                                         //设定返回模式
+self.textfield.secureTextEntry=YES;                                                 //设定安全加密输入的数字会变成点
+self.textfield.borderStyle=UITextBorderStyleRoundedRect;                            //设定圆角边框
+self.textfield.clearsOnBeginEditing=YES;                                            //一输入就清空
+self.textfield.enable=NO; 		                                            //设定不允许输入
+self.textfield.text=@"我擦!你看到我le!”;                                           //设定文字颜色
+self.textfield.placeholder=@"请输入用户名";                                        //设定显示的阴影，只有在文本框内没有内容的时候才显示，对齐方式取决于文本框的对齐方式
+
+2.多行文本输入框(UITextView)
+//和单行基本相同，但是部分单行的功能多行不行，比如密码显示的那种类型
+
+3.开关控件(UISwitch)
+switch1.onTintColor=[UIColor grayColor];        				    //打开时候按钮的颜色
+switch1.tintColor=[UIColor yellowColor];        				    //关闭时候按钮的颜色
+switch1.thumbTintColor=[UIColor orangeColor];   				    //开关圆点的按钮颜色
+
+4.分段控件UISegmentedControl
+//初始化使用items，事先定义一个数组，里面的字符串就是分段控件相应的名称
+segmtc.selectedSegmentIndex=0;                                                   //默认选择第0个
+segmtc.tintColor=[UIColor purpleColor];                                          //分段的颜色
+
+5.滑块控件(slider)
+slider.minimumValue=0;                                                              //设置最小值
+slider.maximumValue=10;                                                             //设置最大值
+slider.value=5;                                                                     //设置当前值
+slider.minimumTrackTintColor=[UIColor redColor];                                    //前半段进度条颜色
+slider.maximumTrackTintColor=[UIColor greenColor];                                  //后半段进度条颜色
+slider.thumbTintColor=[UIColor blackColor];                                         //滑块圆点的颜色
+
+6.UISwitch，UISegmentedControl，slider三种控件的行为添加都使用UIControlEventValueChanged
+[switch addTarget:self action:@selector(switchTap:) forControlEvents:UIControlEventValueChanged];
+[segmtc addTarget:self action:@selector(segmtcTap:) forControlEvents:UIControlEventValueChanged];
+[slider addTarget:self action:@selector(sliderTap:) forControlEvents:UIControlEventValueChanged];
+
+
+
+
+
+
