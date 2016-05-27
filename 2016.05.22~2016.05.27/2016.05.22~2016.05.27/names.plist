@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>A</key>
+	<array>
+		<string>顾明轩</string>
+		<string>王爱平</string>
+		<string>张三丰</string>
+	</array>
+	<key>B</key>
+	<array>
+		<string>轩轩</string>
+		<string>我喜欢你</string>
+		<string>我爱你</string>
+		<string>你喜欢我吗</string>
+	</array>
+</dict>
+</plist>
