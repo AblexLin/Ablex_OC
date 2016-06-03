@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2hA-Do-xpu">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--One-->
+        <scene sceneID="8QB-uR-oXb">
+            <objects>
+                <navigationController id="2hA-Do-xpu" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="One" selectedImage="1.png" id="Isb-Yv-zf4"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qQr-Pd-lPq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="O40-W9-Wd2" kind="relationship" relationship="rootViewController" id="g20-Ja-OFj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q0R-dD-reN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-9264" y="-1910"/>
+        </scene>
+        <!--UITableViewController-BgG-ic-ORd-->
+        <scene sceneID="kMD-wS-Xmx">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="UITableViewController-BgG-ic-ORd" id="O40-W9-Wd2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hJH-sy-I23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-8848" y="-1910"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="73" height="73"/>
+    </resources>
+</document>

@@ -1,60 +1,57 @@
 //
-//  MenuTableViewController.m
-//  2016.06.02(平板上的分割视图)
+//  TableViewController.m
+//  2016.06.03(Storyboard)
 //
-//  Created by 顾明轩 on 16/6/2.
+//  Created by 顾明轩 on 16/6/3.
 //  Copyright © 2016年 顾明轩. All rights reserved.
 //
 
-#import "MenuTableViewController.h"
+#import "TableViewController.h"
 
-@interface MenuTableViewController ()
+@interface TableViewController ()
 
 @end
 
-@implementation MenuTableViewController
-
-@synthesize arr;
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title=@"邮件";
-    //初始化数据的数组
-    self.arr=[NSArray arrayWithObjects:@"2222",@"3333",@"4444",@"5555",@"6666",@"1111", nil];
     
+    // Uncomment the following line to preserve selection between presentations.
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-//设置分区数目
+
+#pragma mark - Table view data source
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+#warning Incomplete implementation, return the number of sections
     return 1;
 }
-//设置每个分区内的行数
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
-    return self.arr.count;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+#warning Incomplete implementation, return the number of rows
+    return 10;
 }
-//设置每个行里显示的数据
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellid=@"fdjklsafjdlksaj";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellid];
-    if (cell==nil) {
-        cell=[[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellid];
+    UITableViewCell *cell;
+    if (indexPath.row%2==0) {
+        cell=[tableView dequeueReusableCellWithIdentifier:@"cellid"];
     }
-    cell.textLabel.text=self.arr[indexPath.row];
+    else{
+        cell=[tableView dequeueReusableCellWithIdentifier:@"cellidTwo"];
+    }
     return cell;
 }
-//选中某一行的时候执行到这里，然后去执行传递数据的函数，执行这个函数之前必须是要实现代理的
--(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    //代理太巧妙了，这里的delegate其实就是在应用程序代理里面赋值的详细界面。要好好学习和理解代理
-    //这节课的核心还是在代理这；
-    [self.delegate passStr:self.arr[indexPath.row]];
-    
-}
+
 
 /*
 // Override to support conditional editing of the table view.
