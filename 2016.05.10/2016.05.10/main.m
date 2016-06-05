@@ -132,7 +132,7 @@ int main(int argc, const char * argv[]) {
         */
         
         //NSValue把数据型的数据转换为对象,把点，矩形，范围，大小转换为对象，在保存在数组中
-        /*
+        
         CGPoint point1={1,1};
         CGPoint point2={2,2};
         CGPoint point3={3,3};
@@ -145,7 +145,7 @@ int main(int argc, const char * argv[]) {
         for (NSValue *v in gmxarray) {
             NSLog(@"%g,%g",[v pointValue].x,[v pointValue].y);//和之前的intvalue是一样的
         }
-        */
+        
         
         //NSNumber把数值转换为对象
         /*
