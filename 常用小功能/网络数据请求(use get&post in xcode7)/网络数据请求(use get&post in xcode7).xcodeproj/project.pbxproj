@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7F96DCF41D0C3FA700BB9D22 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F96DCF31D0C3FA700BB9D22 /* main.m */; };
+		7F96DCF71D0C3FA700BB9D22 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F96DCF61D0C3FA700BB9D22 /* AppDelegate.m */; };
+		7F96DCFA1D0C3FA700BB9D22 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F96DCF91D0C3FA700BB9D22 /* ViewController.m */; };
+		7F96DCFD1D0C3FA700BB9D22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F96DCFB1D0C3FA700BB9D22 /* Main.storyboard */; };
+		7F96DCFF1D0C3FA700BB9D22 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F96DCFE1D0C3FA700BB9D22 /* Assets.xcassets */; };
+		7F96DD021D0C3FA700BB9D22 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F96DD001D0C3FA700BB9D22 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7F96DCEF1D0C3FA700BB9D22 /* 网络数据请求(use get&post in xcode7).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "网络数据请求(use get&post in xcode7).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F96DCF31D0C3FA700BB9D22 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F96DCF51D0C3FA700BB9D22 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		7F96DCF61D0C3FA700BB9D22 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		7F96DCF81D0C3FA700BB9D22 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		7F96DCF91D0C3FA700BB9D22 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		7F96DCFC1D0C3FA700BB9D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7F96DCFE1D0C3FA700BB9D22 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7F96DD011D0C3FA700BB9D22 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7F96DD031D0C3FA700BB9D22 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7F96DCEC1D0C3FA700BB9D22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7F96DCE61D0C3FA700BB9D22 = {
+			isa = PBXGroup;
+			children = (
+				7F96DCF11D0C3FA700BB9D22 /* 网络数据请求(use get&post in xcode7) */,
+				7F96DCF01D0C3FA700BB9D22 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7F96DCF01D0C3FA700BB9D22 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F96DCEF1D0C3FA700BB9D22 /* 网络数据请求(use get&post in xcode7).app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7F96DCF11D0C3FA700BB9D22 /* 网络数据请求(use get&post in xcode7) */ = {
+			isa = PBXGroup;
+			children = (
+				7F96DCF51D0C3FA700BB9D22 /* AppDelegate.h */,
+				7F96DCF61D0C3FA700BB9D22 /* AppDelegate.m */,
+				7F96DCF81D0C3FA700BB9D22 /* ViewController.h */,
+				7F96DCF91D0C3FA700BB9D22 /* ViewController.m */,
+				7F96DCFB1D0C3FA700BB9D22 /* Main.storyboard */,
+				7F96DCFE1D0C3FA700BB9D22 /* Assets.xcassets */,
+				7F96DD001D0C3FA700BB9D22 /* LaunchScreen.storyboard */,
+				7F96DD031D0C3FA700BB9D22 /* Info.plist */,
+				7F96DCF21D0C3FA700BB9D22 /* Supporting Files */,
+			);
+			path = "网络数据请求(use get&post in xcode7)";
+			sourceTree = "<group>";
+		};
+		7F96DCF21D0C3FA700BB9D22 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7F96DCF31D0C3FA700BB9D22 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7F96DCEE1D0C3FA700BB9D22 /* 网络数据请求(use get&post in xcode7) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7F96DD061D0C3FA700BB9D22 /* Build configuration list for PBXNativeTarget "网络数据请求(use get&post in xcode7)" */;
+			buildPhases = (
+				7F96DCEB1D0C3FA700BB9D22 /* Sources */,
+				7F96DCEC1D0C3FA700BB9D22 /* Frameworks */,
+				7F96DCED1D0C3FA700BB9D22 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "网络数据请求(use get&post in xcode7)";
+			productName = "网络数据请求(use get&post in xcode7)";
+			productReference = 7F96DCEF1D0C3FA700BB9D22 /* 网络数据请求(use get&post in xcode7).app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7F96DCE71D0C3FA700BB9D22 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "顾明轩";
+				TargetAttributes = {
+					7F96DCEE1D0C3FA700BB9D22 = {
+						CreatedOnToolsVersion = 7.0;
+						DevelopmentTeam = CRW993P9U2;
+					};
+				};
+			};
+			buildConfigurationList = 7F96DCEA1D0C3FA700BB9D22 /* Build configuration list for PBXProject "网络数据请求(use get&post in xcode7)" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7F96DCE61D0C3FA700BB9D22;
+			productRefGroup = 7F96DCF01D0C3FA700BB9D22 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7F96DCEE1D0C3FA700BB9D22 /* 网络数据请求(use get&post in xcode7) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7F96DCED1D0C3FA700BB9D22 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F96DD021D0C3FA700BB9D22 /* LaunchScreen.storyboard in Resources */,
+				7F96DCFF1D0C3FA700BB9D22 /* Assets.xcassets in Resources */,
+				7F96DCFD1D0C3FA700BB9D22 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7F96DCEB1D0C3FA700BB9D22 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F96DCFA1D0C3FA700BB9D22 /* ViewController.m in Sources */,
+				7F96DCF71D0C3FA700BB9D22 /* AppDelegate.m in Sources */,
+				7F96DCF41D0C3FA700BB9D22 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7F96DCFB1D0C3FA700BB9D22 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F96DCFC1D0C3FA700BB9D22 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7F96DD001D0C3FA700BB9D22 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7F96DD011D0C3FA700BB9D22 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7F96DD041D0C3FA700BB9D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7F96DD051D0C3FA700BB9D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7F96DD071D0C3FA700BB9D22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "网络数据请求(use get&post in xcode7)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "P4-gumingxuan-163.com.-------use-get-post-in-xcode7-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7F96DD081D0C3FA700BB9D22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "网络数据请求(use get&post in xcode7)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "P4-gumingxuan-163.com.-------use-get-post-in-xcode7-";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7F96DCEA1D0C3FA700BB9D22 /* Build configuration list for PBXProject "网络数据请求(use get&post in xcode7)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F96DD041D0C3FA700BB9D22 /* Debug */,
+				7F96DD051D0C3FA700BB9D22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7F96DD061D0C3FA700BB9D22 /* Build configuration list for PBXNativeTarget "网络数据请求(use get&post in xcode7)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F96DD071D0C3FA700BB9D22 /* Debug */,
+				7F96DD081D0C3FA700BB9D22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7F96DCE71D0C3FA700BB9D22 /* Project object */;
+}

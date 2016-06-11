@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>502191C1-3A25-478D-9578-A3AA756D0E0D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>2016.06.11(get&amp;&amp;post login&amp;&amp;regist)</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2AF488B905B0F5D9BFDDDB8F5A5D9C59641BBE3F</key>
+		<string>github.com:AblexLin/Ablex_OC.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>2016.06.11(get&amp;&amp;post login&amp;&amp;regist)/2016.06.11(get&amp;&amp;post login&amp;&amp;regist).xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2AF488B905B0F5D9BFDDDB8F5A5D9C59641BBE3F</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:AblexLin/Ablex_OC.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2AF488B905B0F5D9BFDDDB8F5A5D9C59641BBE3F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2AF488B905B0F5D9BFDDDB8F5A5D9C59641BBE3F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Ablex_OC</string>
+		</dict>
+	</array>
+</dict>
+</plist>

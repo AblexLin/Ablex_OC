@@ -75,6 +75,7 @@
         6.上面的操作是为了可以使用php模块，php和html的主要区别就是php打开后会显示运算后的数据，是否运算的标志就是下面的<? ?>这个代码内部的代码
         7.下面是数据库的增删改查实现，想要使用数据库还需要安装三个东西分别为，mysql软件，mysql软件里面包含的一个mysql.prefpane文件，navicatmysql软件
         8.确保上方三个软件正常安装，mysql.prefpane安装后会在系统偏好设置的最下面出现一个mysql服务的开启，只有开启后才能访问数据库，下面的代码才是有效的
+        9.修改数据库密码，第一次的时候使用空密码，然后使用UPDATE user set Password=PASSWORD("475261") WHERE User="root"这个去修改密码，然后再停止开启偏好设置里的mysql server
         下面列出数据库操作的几个函数，重点记忆
         1.$connect=mysql_connect("","","");              //三个参数分别为本机ip，用户名，密码，这里用户名和密码是指代的mysql的那个自己可以通过queries修改的，这是链接数据库，返回的是真或者假
         2.$result=mysql_select_db("gmx",$connect);       //mysql中有很多数据库，选择某个数据库，从某个链接中
