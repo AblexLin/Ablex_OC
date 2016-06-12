@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<students>
+    <student name="顾明轩" sex="男" age="22" />
+    <student name="王小霖" sex="女" age="21" ></student>
+</students>

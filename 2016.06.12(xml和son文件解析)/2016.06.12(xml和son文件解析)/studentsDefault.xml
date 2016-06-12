@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<students>
+    <student>
+        <name>顾明轩</name>
+        <sex>男</sex>
+        <age>26</age>
+    </student>
+    <student>
+        <name>王小霖</name>
+        <sex>女</sex>
+        <age>25</age>
+    </student>
+</students>
