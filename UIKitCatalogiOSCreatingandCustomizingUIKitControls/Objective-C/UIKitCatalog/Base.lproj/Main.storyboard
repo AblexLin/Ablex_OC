@@ -2352,16 +2352,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0x9-7A-QSY">
-                                <rect key="frame" x="20" y="267" width="560" height="49"/>
+                                <rect key="frame" x="20" y="267" width="560" height="42"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Adding/removing arranged views" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xvN-1u-3uB">
-                                        <rect key="frame" x="0.0" y="0.0" width="469" height="49"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="476" height="42"/>
                                         <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wo0-ot-QKK" userLabel="Add button">
-                                        <rect key="frame" x="469" y="0.0" width="49" height="49"/>
+                                        <rect key="frame" x="476" y="0.0" width="42" height="42"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                         <state key="normal" image="stepper_increment"/>
                                         <connections>
@@ -2369,7 +2369,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="253" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dj6-dd-7WP" userLabel="Remove button">
-                                        <rect key="frame" x="518" y="0.0" width="42" height="49"/>
+                                        <rect key="frame" x="518" y="0.0" width="42" height="42"/>
                                         <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                         <state key="normal" image="stepper_decrement"/>
                                         <connections>
@@ -2378,7 +2378,7 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HkG-EO-k8w">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HkG-EO-k8w">
                                 <rect key="frame" x="20" y="317" width="560" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" placeholder="YES" id="QtF-4I-Uwd"/>
@@ -2403,7 +2403,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" horizontalCompressionResistancePriority="749" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Q5G-xb-NaP">
-                                                <rect key="frame" x="115" y="0.0" width="386" height="30"/>
+                                                <rect key="frame" x="115" y="0.0" width="393" height="30"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -2411,7 +2411,7 @@
                                                 </variation>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gnn-Xx-LnY">
-                                                <rect key="frame" x="511" y="0.0" width="49" height="30"/>
+                                                <rect key="frame" x="518" y="0.0" width="42" height="30"/>
                                                 <inset key="contentEdgeInsets" minX="10" minY="0.0" maxX="10" maxY="0.0"/>
                                                 <state key="normal" image="stepper_increment"/>
                                                 <connections>

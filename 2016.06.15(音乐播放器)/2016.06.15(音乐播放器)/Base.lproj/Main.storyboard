@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="psb.png" translatesAutoresizingMaskIntoConstraints="NO" id="tkZ-1y-hvj">
+                                <rect key="frame" x="85" y="9" width="150" height="155"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="PJK-Rg-O8I">
+                                <rect key="frame" x="18" y="279" width="284" height="31"/>
+                                <color key="minimumTrackTintColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="maximumTrackTintColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="thumbTintColor" red="1" green="0.43529412150000002" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="progressChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="4Fz-Yd-DMH"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Sts-kn-RPr">
+                                <rect key="frame" x="18" y="328" width="284" height="31"/>
+                                <color key="thumbTintColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="volSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="WP8-Fl-7Y1"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QeG-1K-9iM">
+                                <rect key="frame" x="20" y="226" width="30" height="30"/>
+                                <state key="normal" title="Button" image="last.png"/>
+                                <connections>
+                                    <action selector="lastSongBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rb5-o5-hDY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rdd-bX-Tm5">
+                                <rect key="frame" x="270" y="226" width="30" height="30"/>
+                                <state key="normal" title="Button" image="next.png"/>
+                                <connections>
+                                    <action selector="nextSongBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vo1-1U-N7B"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bT0-Zv-wIC">
+                                <rect key="frame" x="145" y="226" width="30" height="30"/>
+                                <state key="normal" title="Button" image="play.png"/>
+                                <connections>
+                                    <action selector="playSongBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="veS-rl-ep6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="playSong" destination="bT0-Zv-wIC" id="trb-Ni-qdm"/>
+                        <outlet property="progressSlider" destination="PJK-Rg-O8I" id="ZYA-1P-XWB"/>
+                        <outlet property="volSlider" destination="Sts-kn-RPr" id="f4l-PM-dAL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="461" y="426"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="last.png" width="50" height="50"/>
+        <image name="next.png" width="50" height="50"/>
+        <image name="play.png" width="60" height="59"/>
+        <image name="psb.png" width="494" height="511"/>
+    </resources>
+</document>

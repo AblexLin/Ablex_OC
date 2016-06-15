@@ -40,20 +40,20 @@
                                     <action selector="btnGCD:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WOv-xv-Wlp"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qt5-jb-JPM">
-                                <rect key="frame" x="20" y="115" width="280" height="30"/>
-                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="NSThread Tickets"/>
-                                <connections>
-                                    <action selector="btnNSThreadTickets:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ye4-LA-eSz"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="05D-gp-gze">
                                 <rect key="frame" x="20" y="309" width="280" height="30"/>
                                 <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="GCD Tickets"/>
                                 <connections>
                                     <action selector="btnGCDTickets:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CR5-c6-vHa"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qt5-jb-JPM">
+                                <rect key="frame" x="20" y="115" width="280" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="NSThread Tickets"/>
+                                <connections>
+                                    <action selector="btnNSThreadTickets:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ye4-LA-eSz"/>
                                 </connections>
                             </button>
                         </subviews>

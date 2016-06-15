@@ -20,7 +20,7 @@
  1.NSThread
  2.NSOperation
  3.GCD(Grand Central Dispatch)
- 4.self performSelectorInBackground:<#(nonnull SEL)#> withObject:<#(nullable id)#>这是第四种，创建一个后台的线程
+ 4.self performSelectorInBackground:(nonnull SEL) withObject:<#(nullable id)#>这是第四种，创建一个后台的线程
  何时使用：1.想要使用更多系统资源的，占用更多时间的 2.需要运行时间很长的，比如下载
  核介绍：1.双核表示同一时间能运行两个线程 2.计算机最小的运行单位就是线程
 */

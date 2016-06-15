@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xuans>
+    <xuan>
+        <name>顾明轩</name>
+        <sex>男</sex>
+        <age>22</age>
+    </xuan>
+    <xuan>
+        <name>王小霖</name>
+        <sex>女</sex>
+        <age>23</age>
+    </xuan>
+    <xuan>
+        <name>老人头</name>
+        <sex>男</sex>
+        <age>30</age>
+    </xuan>
+    <xuan2 name="仇颖飞" sex="女" age="26" />
+    <xuan2 name="崇凯" sex="男" age="21" />
+    <xuan2 name="冯佩云" sex="女" age="22" />
+</xuans>
