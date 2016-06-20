@@ -1,0 +1,12 @@
+
+/* Class = "UIButton"; normalTitle = "录像"; ObjectID = "4Xm-gB-H16"; */
+"4Xm-gB-H16.normalTitle" = "录像";
+
+/* Class = "UIButton"; normalTitle = "拍照"; ObjectID = "CvQ-LR-eiB"; */
+"CvQ-LR-eiB.normalTitle" = "拍照";
+
+/* Class = "UIButton"; normalTitle = "编辑图片"; ObjectID = "M3J-LJ-S9W"; */
+"M3J-LJ-S9W.normalTitle" = "编辑图片";
+
+/* Class = "UIButton"; normalTitle = "读取相册"; ObjectID = "tz8-WY-0tw"; */
+"tz8-WY-0tw.normalTitle" = "读取相册";
