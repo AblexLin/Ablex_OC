@@ -180,6 +180,7 @@
         NSLog(@"click the button on cellPlayAndPauseBtn");
         globalCurrentRow=sender.tag;
         if (cellSaveRow!=sender.tag) {
+            songProgressSlider.value=0;
             [self playSongWithName:songNames[globalCurrentRow]];
         }
         else{
