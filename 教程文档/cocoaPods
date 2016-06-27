@@ -1,0 +1,18 @@
+1.首先确保安装了ruby，mac自带会安装的
+2.sudo gem install cocoapods   无反应，需要翻墙
+3.gem sources --remove https://rubygems.org/
+4.gem sources -a http://ruby.taobao.org/
+5.gem sources -l 验证3.4的操作是不是有效的
+6.
+*** CURRENT SOURCES ***
+
+http://ruby.taobao.org/  出现这个说明有效
+7.sudo gem install cocoapods再次安装
+8.在项目文件下新建文件Podfile并配置需要下载的库，比如
+platform :ios, ‘7.0‘
+pod "AFNetworking", "~> 2.0"
+
+9.pod install 最后一步会生成一个workplace，点击这个来打开你的项目就好了
+10.pod install --verbose --no-repo-update使用这个就不更新本地库了。可以试试
+
+pod search AFNetworking   //搜索下pod是不是支持这个第三方库的下载和管理
